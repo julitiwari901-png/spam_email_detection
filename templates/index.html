@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Spam Email Detection</title>
+
     <style>
         body{
             background:#f2f2f2;
@@ -18,11 +19,17 @@
             text-align:center;
         }
 
+        h2{
+            color:#333;
+        }
+
         textarea{
-            width:100%;
+            width:95%;
             height:180px;
-            padding:10px;
+            padding:12px;
             font-size:16px;
+            border-radius:5px;
+            border:1px solid gray;
         }
 
         button{
@@ -40,29 +47,38 @@
         button:hover{
             background:#0056b3;
         }
+
     </style>
+
 </head>
+
 
 <body>
 
 <div class="container">
 
-<h2>Spam Email Detection</h2>
+<h2>📧 Spam Email Detection</h2>
+
 
 <form action="/predict" method="POST">
 
-<textarea
+
+<textarea 
 name="message"
 placeholder="Enter email text here..."
 required></textarea>
+
 
 <button type="submit">
 Predict
 </button>
 
+
 </form>
+
 
 </div>
 
 </body>
+
 </html>
